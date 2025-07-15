@@ -1,0 +1,124 @@
+/* Birthday Plugin Styles */
+
+/* Sidebar Action Bar */
+.birthday-action-bar {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  background: var(--background-secondary);
+  z-index: 10;
+  border-bottom: 1px solid var(--background-modifier-border);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 0 0 var(--background-modifier-border);
+}
+.birthday-action-bar__label {
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 8px;
+}
+.birthday-action-bar__actions {
+  display: flex;
+  gap: 8px;
+  margin-right: 8px;
+}
+
+/* Birthday List Container */
+.birthday-list {
+  height: calc(100% - 40px);
+  overflow: hidden;
+}
+.birthday-list__flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.birthday-list__scroll {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+/* Birthday Table */
+.birthday-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.birthday-table__month-header {
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.birthday-table__month-header--past {
+  opacity: 0.4;
+  color: var(--text-faint);
+}
+.birthday-table__month-header--current {
+  opacity: 1;
+  color: unset;
+}
+.birthday-table__row--today {
+  background: var(--background-secondary-alt, #e6f7e6);
+}
+.birthday-table__row--past {
+  opacity: 0.4;
+}
+.birthday-table__today-marker {
+  background: var(--background-secondary-alt, #e6f7e6);
+  text-align: center;
+}
+.birthday-table__today-marker-cell {
+  font-weight: bold;
+}
+.birthday-table__note-cell {
+  text-align: right;
+}
+.birthday-table__note-link {
+  text-decoration: none;
+}
+.birthday-table__note-link--today {
+  font-weight: bold;
+}
+
+/* Settings Info Section */
+.birthday-settings-info {
+  background: var(--background-secondary, #f7f7f7);
+  padding: 20px;
+  margin: 24px 0;
+  border-radius: 10px;
+  border: 1px solid var(--background-modifier-border, #e0e0e0);
+}
+.birthday-settings-info__heading {
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+.birthday-settings-info__version-block {
+  margin: 12px 0;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  font-size: 1em;
+}
+.birthday-settings-info__version-code {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--background-primary-alt, #ededed);
+}
+.birthday-settings-info__paragraph {
+  margin-bottom: 8px;
+}
+.birthday-settings-info__code-block {
+  margin: 12px 0;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  font-size: 1em;
+}
+.birthday-settings-info__syntax-code {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: var(--background-primary-alt, #ededed);
+}
