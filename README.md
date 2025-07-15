@@ -1,0 +1,1 @@
+# obsidian-simple-birthday-plugin
