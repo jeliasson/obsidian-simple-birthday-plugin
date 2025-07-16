@@ -1,18 +1,18 @@
 import { ItemView, WorkspaceLeaf, setIcon } from 'obsidian';
-import type MyPlugin from '../main';
+import type SimpleBirthdayPlugin from '../main';
 import { extractBirthdaysFromFiles, sortBirthdays } from './utils';
 import type { BirthdayEntry } from '../types/birthday';
 
 export const BIRTHDAY_VIEW_TYPE = 'birthday-sidebar-view';
 
 export class View extends ItemView {
-  readonly plugin: MyPlugin;
+  readonly plugin: SimpleBirthdayPlugin;
   static instance: View | null = null;
   private _todayRow: HTMLTableRowElement | null = null;
 
   birthdayListEl: HTMLElement | null = null;
 
-  constructor(leaf: WorkspaceLeaf, plugin: MyPlugin) {
+  constructor(leaf: WorkspaceLeaf, plugin: SimpleBirthdayPlugin) {
     super(leaf);
 	
     this.plugin = plugin;
@@ -114,7 +114,7 @@ export class View extends ItemView {
           monthHeader.classList.add('birthday-table__month-header--current');
         }
 
-        monthRow.style.height = '10px';
+        monthRow.classList.add('birthday-table__month-row');
         lastMonth = month;
       }
       

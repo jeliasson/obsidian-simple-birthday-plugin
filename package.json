@@ -1,6 +1,6 @@
 {
 	"name": "simple-birthday",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A simple plugin to track and display upcoming birthdays in your Obsidian vault.",
 	"main": "main.js",
 	"scripts": {

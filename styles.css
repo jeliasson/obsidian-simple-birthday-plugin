@@ -82,6 +82,9 @@
 .birthday-table__note-link--today {
   font-weight: bold;
 }
+.birthday-table__month-row {
+  height: 10px;
+}
 
 /* Settings Info Section */
 .birthday-settings-info {
