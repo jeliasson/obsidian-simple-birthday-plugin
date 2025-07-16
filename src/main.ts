@@ -8,7 +8,7 @@ interface PluginSettings {}
 
 const DEFAULT_SETTINGS: PluginSettings = {};
 
-export default class MyPlugin extends Plugin {
+export default class SimpleBirthdayPlugin extends Plugin {
   settings: PluginSettings = {};
 
   async onload(): Promise<void> {
