@@ -1,7 +1,7 @@
 {
 	"id": "simple-birthday",
 	"name": "Simple Birthday",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "A simple plugin to track and display upcoming birthdays in your Obsidian vault.",
 	"author": "Johan Eliasson",
