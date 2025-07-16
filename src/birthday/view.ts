@@ -114,7 +114,7 @@ export class View extends ItemView {
           monthHeader.classList.add('birthday-table__month-header--current');
         }
 
-        monthRow.style.height = '10px';
+        monthRow.classList.add('birthday-table__month-row');
         lastMonth = month;
       }
       
